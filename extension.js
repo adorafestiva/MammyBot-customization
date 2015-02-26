@@ -52,10 +52,10 @@
 
     //Change the bots default settings and make sure they are loaded on launch
 
-    localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+    localStorage.setItem("MammyBotsettings", JSON.stringify({
+        botName: "MammyBot",
         language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/penash42/MammyBot/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
@@ -104,12 +104,12 @@
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/penash42/MammyBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/penash42/MammyBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/penash42/MammyBot/master/mammyBot.js', extend);
 
 }).call(this);
